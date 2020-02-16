@@ -1,0 +1,15 @@
+<div class="row mt-5">
+  <div class="col-sm-6">
+    <ul class="list-group" *ngFor="let post of Listuser">
+      <li class="list-group-item" (click)="onUserDetails(post)">{{post.name}}</li>
+    </ul>
+  </div>
+
+  <div *ngIf="userSelected" class="bg-danger">
+    <p>Nom : {{userSelected.name}}</p> 
+    <p>Nom d'utilisateur : {{userSelected.username}}</p> 
+    <p>Phone : {{userSelected.phone}}</p>
+    <p>website : {{userSelected.website}}</p>
+  </div>
+</div>
+
