@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
  
- UserSubject = new Subject<any[]>();  
- //observable émettre des données
+ 
 
  private userList = [
   {
@@ -242,17 +241,8 @@ export class UserService {
   }
 ]
    
-  constructor() { }
-
-  emitdata(){
-    this.UserSubject.next(this.userList.slice());
-  }
-
-  searchUser(name:string){
-    usersearch : {}
-     
-
-    
+  public getList(){
+    return this.userList;
   }
 
 }
