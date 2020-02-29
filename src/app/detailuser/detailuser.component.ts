@@ -17,7 +17,7 @@ export class DetailuserComponent implements OnInit {
 
   ngOnInit() {
     
-    let id = this.route.snapshot.paramMap.get('id');
+    let id = this.route.snapshot.paramMap.get('id');  //recuperer identifiant url
     this.user = this.service.getUserId(+id);
     
 
