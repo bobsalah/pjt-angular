@@ -10,16 +10,12 @@ import { UserService } from '../services/user.service';
 export class ListuserComponent implements OnInit {
 
   Listuser : any[];
-  userSelected : {};
-
+ 
   constructor(private userService:UserService) { }
 
   ngOnInit() {
      this.Listuser = this.userService.getList();
   }
 
-  onUserDetails(user:{}){
-    this.userSelected = user;
-  }
-
+ 
 }

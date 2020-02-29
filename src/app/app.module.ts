@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 
 import { ListuserComponent } from './listuser/listuser.component';
 import { FormsModule } from '@angular/forms';
+import { DetailuserComponent } from './detailuser/detailuser.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListuserComponent
+    ListuserComponent,
+    DetailuserComponent
   ],
-  imports: [
+  imports: [  
     BrowserModule,
     AppRoutingModule,
     FormsModule

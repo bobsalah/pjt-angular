@@ -1,0 +1,11 @@
+
+
+<div class="container" >
+  <div class="bg-success h-25" *ngIf="user">
+    <p>Nom : {{ user.username }}</p> 
+    <p class="bg-light">Modifier Nom : <input type="text" [(ngModel)]="user.name"></p>
+    <p>Nom d'utilisateur :  {{ user.name }}</p> 
+    <p>Phone : {{ user.phone }}</p>
+    <p>website :  {{ user.website }}</p>
+  </div>
+</div>

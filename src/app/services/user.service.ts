@@ -245,4 +245,9 @@ export class UserService {
     return this.userList;
   }
 
+   public getUserId(id:number){
+
+     return  this.userList.find(element => element.id == id);
+     
+   }
 }
